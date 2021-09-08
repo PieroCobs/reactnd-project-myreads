@@ -23,14 +23,10 @@ class BookShelf extends Component {
                   books.length > 0 ? (
                      <ol className="books-grid">
                         {
-                           books.map(({id, title, imageLinks: {smallThumbnail}, authors, shelf}) => (
+                           books.map(book => (
                               <Book
-                                 key={id}
-                                 id={id}
-                                 title={title}
-                                 thumbnailUrl={smallThumbnail}
-                                 authors={authors}
-                                 shelf={shelf}
+                                 key={book.id}
+                                 book={book}
                                  onUpdateBookShelf={onUpdateBookShelf}
                               />
                            ))

@@ -9,6 +9,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import BookShelf from './BookShelf';
+import Prompt from '../Prompt';
 
 
 class BookListing extends Component {
@@ -24,9 +25,7 @@ class BookListing extends Component {
          </div>
          {
             loadingBooks ? (
-            <div className="loader">
-               <p className="loader-message">Loading books...</p>
-            </div>
+               <Prompt message="loading books..."/>
             ) : (
                <div className="list-books-content">
                   <BookShelf 
