@@ -41,6 +41,7 @@ body, .app {
 
 .bookshelf-title {
   border-bottom: 1px solid #dedede;
+  text-transform: capitalize;
 }
 
 .bookshelf-books {
@@ -195,4 +196,17 @@ button:active {
   padding: 20px 10px 0;
   text-align: center;
   font-size: 0.8em;
+}
+
+
+/* loader */
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 100px);
+}
+
+.loader-message {
+  font-weight: bold;
 }
