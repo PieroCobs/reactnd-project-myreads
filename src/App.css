@@ -54,7 +54,7 @@ body, .app {
   bottom: 25px;
 }
 
-.open-search button {
+.open-search a {
   display: block;
   width: 50px;
   height: 50px;
@@ -83,6 +83,7 @@ body, .app {
   left: 0;
   z-index: 5;
   display: flex;
+  background: #fff;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 0 6px rgba(0,0,0,0.23);
 }
 
@@ -198,15 +199,16 @@ button:active {
   font-size: 0.8em;
 }
 
-
 /* loader */
-.loader {
+
+.prompt {
   display: flex;
   justify-content: center;
   align-items: center;
   height: calc(100vh - 100px);
 }
 
-.loader-message {
+.prompt-message {
   font-weight: bold;
+  text-transform: capitalize;
 }
